@@ -1,0 +1,47 @@
+.error-container {
+    min-height: 65vh;
+    margin-top: 0;
+}
+
+.not-found-404 {
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 200px;
+    color: #ff6060;
+    margin-top: 100px;
+}
+
+.error-msg {
+    display: flex;
+    justify-content: center;
+    font-size: 31px;
+    color: #ff6060;
+}
+
+.return-link {
+    display: flex;
+    justify-content: center;
+    color: #ff6060; 
+    text-decoration: underline; 
+    font-weight: bold; 
+    margin-top: 100px;
+}
+
+@media (min-width: 320px) and (max-width: 1023px) {
+    .error-container {
+        min-height: 60vh;
+    }
+    
+    .not-found-404 {
+        font-size: 100px;
+        margin-top: 70px;
+    }
+    
+    .error-msg {
+        font-size: 27px;
+        text-align: center;
+    }
+    
+}
+

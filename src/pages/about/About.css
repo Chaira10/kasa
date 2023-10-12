@@ -1,0 +1,25 @@
+.collapse {
+    padding: 0 10rem;
+    
+}
+.description {
+    margin-bottom: 21px;
+}
+
+
+@media (min-width: 320px) and (max-width: 1023px) {
+    .collapse-container {
+        margin: 5px 0 !important;
+        padding-left: 0;
+        margin-bottom: 35px !important;
+        width: 80vw;
+        /* margin-left: -15px !important; */
+        
+    }
+
+    .collapse {
+        padding: 0 2.7rem;
+        
+    }
+    
+}

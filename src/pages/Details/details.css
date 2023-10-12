@@ -1,0 +1,19 @@
+@media (min-width: 320px) and (max-width: 1023px) {
+    .collapse-toggle {
+      padding: 0px 20px;
+      font-size: 15px;
+
+    }
+  
+    .chevron {
+      font-size: 45px;
+    }
+  
+    .collapse-container {
+      margin: 5px 21px !important;
+      padding-left: 0;
+      margin-bottom: 25px !important;
+      width: 90vw;
+      /* margin-left: 25px !important; */
+    }
+  }

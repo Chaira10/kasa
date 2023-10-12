@@ -1,0 +1,140 @@
+.grid-container {
+  margin: 0 2rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: lightgrey;
+  border-radius: 30px;
+  padding: 41px;
+  margin-bottom: 41px;  
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 43px;
+  grid-row-gap: 43px;
+}
+
+.house-card {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.house-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+    z-index: 1; 
+  border-radius: 11px;
+
+  }
+
+.house-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 11px;
+  min-height: 100%;
+
+}
+
+.house-title {
+  font-size: 18px;
+  margin:  0;
+  position: absolute;
+  bottom: 3%;
+  color: white;
+  padding: 10px;
+  width: 50%;
+  text-align: start;
+  font-weight: 500;
+  z-index: 2;
+}
+
+@media (min-width: 320px) and (max-width: 1023px) {
+  .grid-container {
+    margin: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 30px;
+    padding-top: 51px;
+    padding-bottom: 51px;
+    margin-bottom: 51px;
+    width: 100vw;
+    padding: 0;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Une colonne pour les écrans mobiles */
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 20px; 
+    grid-row-gap: 20px; 
+  }
+  
+  .house-card {
+    text-align: center;
+    position: relative;
+    width: 90vw; 
+    height: 100% !important;
+    /* min-height: 100% !important; */
+    align-items: center;
+
+
+  }
+
+
+  
+  .house-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+    z-index: 1; 
+    border-radius: 11px;
+
+  }
+  
+  .house-img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 11px;
+    height: 100% !important;
+    min-height: 100% !important;
+
+  }
+  
+  .house-title {
+    font-size: 18px;
+    margin: 10px 0;
+    position: absolute;
+    bottom: 3%;
+    color: white;
+    padding: 10px;
+    width: 90%;
+    text-align: start;
+    font-weight: 500;
+    z-index: 2;
+  }
+  /* .house-card img{
+    width: 100%;
+    height: 100% !important;
+    min-height: 100% !important;
+
+  } */
+}
+
+

@@ -1,0 +1,17 @@
+.star {
+    color: lightgray; /* Couleur des étoiles non colorées */
+  }
+  
+  .star-colored {
+    color: #ff6060; /* Couleur des étoiles colorées */
+  }
+  
+  .rating-stars {
+    font-size: 39px; /* Taille de la police des étoiles */
+  }
+
+  @media (min-width: 320px) and (max-width: 1023px) {
+    .rating-stars {
+      font-size: 29px; /* Taille de la police des étoiles */
+    }
+  }

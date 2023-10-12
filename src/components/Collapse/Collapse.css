@@ -1,0 +1,88 @@
+/* Styles pour le conteneur global du collapse */
+.collapse-container {
+  margin: 10px 0;
+  border-radius: 11px;
+  overflow: hidden;
+  background: #e6e3e3;
+  margin-bottom: 35px;
+}
+
+/* Styles pour le bouton de bascule */
+.collapse-toggle {
+  background: #ff6060;
+  border: none;
+  padding: 0px 20px;
+  text-align: left;
+  font-size: 25px;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border-radius: 11px;
+}
+
+/* Styles pour le contenu caché */
+.collapse-content {
+  padding: 10px 20px;
+  display: none;
+  background: rgb(230, 227, 227);
+  color: #ff6060;
+  transition: all 3s ease-in-out;
+  font-size: 25px;
+}
+.open .collapse-content {
+  max-height: 500px;
+  transition: max-height 3s ease-in-out;
+}
+
+/* Styles pour le contenu ouvert */
+.collapse-container.open .collapse-content {
+  display: block;
+}
+
+.collapse-button .chevron {
+  transition: transform 1s ease-in-out;
+}
+
+.collapse-button.open .chevron {
+  transform: rotate(
+    180deg
+  ); /* Rotation de 180 degrés pour le chevron vers le bas */
+}
+.chevron {
+  display: inline-block;
+  font-size: 65px;
+  transition: transform 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+/* Chevron vers le bas par défaut */
+.chevron.up {
+  transform: rotate(90deg);
+}
+
+/* Chevrons pour les Collapse ouverts */
+.chevron.down {
+  transform: rotate(270deg);
+}
+
+@media (min-width: 320px) and (max-width: 1023px) {
+  .collapse-toggle {
+    padding: 0px 20px;
+    font-size: 15px;
+  }
+
+  .chevron {
+    font-size: 45px;
+  }
+
+  .collapse-container {
+    margin: 5px 0 ;
+    padding-left: 0;
+    margin-bottom: 25px !important;
+    width: 90vw;
+    margin-right: 0%;
+  }
+}
